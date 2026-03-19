@@ -1,0 +1,38 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import HeroBanner from '../components/HeroBanner.astro';
+---
+
+<MainLayout title="About Us" description="Learn about Lane Logistics Group INC - providing domestic truckload shipping services across 48 states.">
+  
+  <HeroBanner title="About Us" backgroundImage="/images/hero-about-truck.png" />
+
+  <section class="section">
+    <div class="container">
+      <div class="content-section">
+        <div class="content-section__text">
+          <h2 class="about-heading">Lane <span class="text-accent">Logistics Group</span> INC</h2>
+          <div class="highlight">
+            Lane Logistics Group Inc is a transportation services that provides domestic truckload shipping from Business to Business in 48 States.
+          </div>
+          <p>We make the shipper's load a priority, and we are working diligently every day to ensure the quality we have provided is beyond ordinary.</p>
+          <p>Our mission is to modernize, fix, and improve your supply chain.</p>
+          <p>Lane Logistics Group provides B2B domestic truckload shipping services. We specialize in connecting shippers with reliable carriers across 48 states, ensuring your freight reaches its destination safely and on time.</p>
+          <p>Our team of experienced logistics professionals is dedicated to providing you with the highest level of service and support. We understand that every shipment is important, and we work tirelessly to ensure that your cargo is handled with care and delivered on time.</p>
+          <a href="/contact-us" class="btn btn--primary" style="margin-top:15px;">Contact Us</a>
+        </div>
+        <div class="content-section__image">
+          <img src="/images/about-truck.png" alt="Lane Logistics Trucks on Highway" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--gray">
+    <div class="container" style="text-align:center;">
+      <h2 class="section-title">Our Mission</h2>
+      <p style="max-width:800px;margin:0 auto;">Our mission is to modernize, fix, and improve your supply chain. We are dedicated to providing innovative logistics solutions that help businesses grow and thrive. Through our extensive network of carriers and our commitment to excellence, we ensure that your shipping needs are met with the highest standards of quality and reliability.</p>
+    </div>
+  </section>
+
+</MainLayout>

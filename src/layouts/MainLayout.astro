@@ -1,0 +1,56 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Lane Logistics Group INC - We Deliver Nationwide Logistics. Domestic truckload shipping from Business to Business in 48 States.' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title} - Lane Logistics Group INC</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <Header currentPath={Astro.url.pathname} />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+
+    <script>
+      // Sticky header shadow on scroll
+      const mainHeader = document.querySelector('.main-header');
+      if (mainHeader) {
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 10) {
+            mainHeader.classList.add('scrolled');
+          } else {
+            mainHeader.classList.remove('scrolled');
+          }
+        });
+      }
+
+      // Mobile nav toggle
+      const navToggle = document.querySelector('.nav-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      if (navToggle && navLinks) {
+        navToggle.addEventListener('click', () => {
+          navLinks.classList.toggle('open');
+        });
+      }
+    </script>
+  </body>
+</html>

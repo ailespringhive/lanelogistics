@@ -1,0 +1,86 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import HeroBanner from '../components/HeroBanner.astro';
+---
+
+<MainLayout title="Contact Us" description="Contact Lane Logistics Group INC - reach us by phone, email, or visit our office in Sunrise, FL.">
+  
+  <HeroBanner title="Contact Us" backgroundImage="/images/hero-highway.png" />
+
+  <section class="section">
+    <div class="container">
+      <div style="text-align:center;max-width:800px;margin:0 auto 40px;">
+        <p>Please visit our contact page for more information about the services that Lane Logistics Group can provide for you. We would be happy to answer any questions you may have and help determine how we can best assist you with your shipping needs.</p>
+        <p style="margin-top:15px;">Lane Logistics Group is dedicated to providing client satisfaction and top-quality support for transportation and logistics services. We hope to partner with you in the future, and we look forward to hearing from you soon.</p>
+      </div>
+
+      <!-- Contact Info Cards -->
+      <div class="contact-info-grid">
+        <div class="contact-info-item">
+          <div class="contact-info-item__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          </div>
+          <h4>Phone</h4>
+          <p><a href="tel:8883313640">888-331-3640</a></p>
+          <p><a href="tel:7543480247">754-348-0247</a></p>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-item__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </div>
+          <h4>Email</h4>
+          <p><a href="mailto:lanelogistics7@gmail.com">lanelogistics7@gmail.com</a></p>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-item__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          </div>
+          <h4>Office Location</h4>
+          <p>2299 Nw 81 Ave,<br>Sunrise, FL 33322</p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-wrapper">
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-first">First Name</label>
+              <input type="text" id="contact-first" placeholder="First Name" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-last">Last Name</label>
+              <input type="text" id="contact-last" placeholder="Last Name" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" placeholder="Email Address" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-phone">Phone</label>
+              <input type="tel" id="contact-phone" placeholder="Phone Number" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" placeholder="Your message..." required></textarea>
+          </div>
+          <div class="recaptcha-box">
+            <label class="recaptcha-label">
+              <input type="checkbox" id="contact-recaptcha" required />
+              <span>I'm not a robot</span>
+            </label>
+            <div class="recaptcha-badge">
+              <small>reCAPTCHA</small>
+              <small>Privacy - Terms</small>
+            </div>
+          </div>
+          <button type="submit" class="form-submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</MainLayout>

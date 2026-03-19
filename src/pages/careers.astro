@@ -1,0 +1,65 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import HeroBanner from '../components/HeroBanner.astro';
+---
+
+<MainLayout title="Careers" description="Join the Lane Logistics Group team - explore career opportunities in logistics and transportation.">
+  
+  <HeroBanner title="Careers" backgroundImage="/images/hero-highway.png" />
+
+  <section class="section">
+    <div class="container">
+      <div style="text-align:center;max-width:800px;margin:0 auto 40px;">
+        <h2 class="section-title">Join Our Team</h2>
+        <p>Lane Logistics Group is committed to providing our clients with quality service and expert advice. We are always looking for individuals interested in joining our team, and if you have the skills to do so, please feel free to apply. Our staff is dedicated to providing outstanding service and reliable solutions, and we firmly believe that we can meet any requirement that you may need.</p>
+        <p style="margin-top:15px;">We know how challenging your business can be, and we want to help you continue thriving as it grows. This commitment does not just extend to our customers but also extends to each member of the Lane Logistics Group team.</p>
+      </div>
+
+      <div class="contact-form-wrapper">
+        <form id="careerForm">
+          <div class="form-group">
+            <label for="career-name">Full Name</label>
+            <input type="text" id="career-name" placeholder="Enter your full name" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="career-email">E-mail</label>
+              <input type="email" id="career-email" placeholder="Enter your email" required />
+            </div>
+            <div class="form-group">
+              <label for="career-phone">Phone</label>
+              <input type="tel" id="career-phone" placeholder="Enter your phone" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="career-position">Position Applying For</label>
+            <input type="text" id="career-position" placeholder="Position you're applying for" />
+          </div>
+          <div class="form-group">
+            <label for="career-message">Message</label>
+            <textarea id="career-message" placeholder="Tell us about yourself"></textarea>
+          </div>
+          <div class="form-group">
+            <label>Upload Your Application</label>
+            <div class="file-upload">
+              <input type="file" id="career-file" accept=".pdf,.doc,.docx" />
+              <p class="file-upload__label">📎 Click or drag to upload your resume (PDF, DOC, DOCX)</p>
+            </div>
+          </div>
+          <div class="recaptcha-box">
+            <label class="recaptcha-label">
+              <input type="checkbox" id="career-recaptcha" required />
+              <span>I'm not a robot</span>
+            </label>
+            <div class="recaptcha-badge">
+              <small>reCAPTCHA</small>
+              <small>Privacy - Terms</small>
+            </div>
+          </div>
+          <button type="submit" class="form-submit">Submit Application</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</MainLayout>

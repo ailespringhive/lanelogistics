@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <!-- Truck 1 (larger) -->
+  <rect x="2" y="32" width="30" height="20" rx="2" fill="#222d39"/>
+  <rect x="28" y="36" width="10" height="16" rx="1" fill="#222d39"/>
+  <circle cx="12" cy="54" r="5" fill="#555" stroke="#333" stroke-width="1.5"/>
+  <circle cx="12" cy="54" r="2" fill="#ddd"/>
+  <circle cx="34" cy="54" r="5" fill="#555" stroke="#333" stroke-width="1.5"/>
+  <circle cx="34" cy="54" r="2" fill="#ddd"/>
+  <rect x="30" y="39" width="6" height="6" rx="1" fill="#87ceeb" opacity="0.6"/>
+  <!-- Truck 2 (smaller) -->
+  <rect x="45" y="38" width="22" height="14" rx="2" fill="#ef3139"/>
+  <rect x="63" y="41" width="8" height="11" rx="1" fill="#ef3139"/>
+  <circle cx="52" cy="54" r="4" fill="#555" stroke="#333" stroke-width="1.5"/>
+  <circle cx="52" cy="54" r="1.5" fill="#ddd"/>
+  <circle cx="68" cy="54" r="4" fill="#555" stroke="#333" stroke-width="1.5"/>
+  <circle cx="68" cy="54" r="1.5" fill="#ddd"/>
+  <!-- Arrows between -->
+  <path d="M20 25 L40 25 L37 22 M40 25 L37 28" stroke="#f0a500" stroke-width="2" fill="none"/>
+  <path d="M60 25 L42 25 L45 22 M42 25 L45 28" stroke="#f0a500" stroke-width="2" fill="none"/>
+</svg>

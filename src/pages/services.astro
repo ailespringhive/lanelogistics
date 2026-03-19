@@ -1,0 +1,50 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import HeroBanner from '../components/HeroBanner.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+---
+
+<MainLayout title="Services" description="Explore our logistics services - Full Truck Load, LTL, and Intermodal shipping across 48 states.">
+  
+  <HeroBanner title="Our Services" backgroundImage="/images/hero-truck.png" />
+
+  <section class="section">
+    <div class="container">
+      <div style="text-align:center;max-width:850px;margin:0 auto 50px;">
+        <h2 class="section-title">What We Offer</h2>
+        <p>Our company is dedicated to your success; besides that, it provides outstanding customer service. Lane Logistics Group specializes in total truckload shipments and can assist with your LTL needs in 48 States. Our group is comprised of 3rd party logistic professionals who care about the product being shipped. We are genuinely a registered property broker (MC#1431130) that is bonded and insured.</p>
+        <p style="margin-top:15px;">With our services, you can expect the best pricing, a "one-stop-shop" location combined with friendly customer service, and timely award-winning performance. While we understand your trade process's arduous, we are here to help alleviate the stress. No matter your shipping needs, we will work hard to find a solution that best meets our client's requirements and expectations.</p>
+      </div>
+      
+      <div class="services-grid">
+        <ServiceCard
+          title="Full Truck Load"
+          text="We can ship an entire semi-trailer container for you for any states in the US except Alaska and Hawaii, and it is the same for Less-Than Truckload."
+          image="/images/service-ftl.png"
+          href="/full-truck-load"
+        />
+        <ServiceCard
+          title="LTL"
+          text="The load-to-truck ratio is a critical aspect of the trucking industry. We have maintained an efficient business model that allows us to provide you with a wide selection of your shipping needs."
+          image="/images/service-ltl.png"
+          href="/ltl"
+        />
+        <ServiceCard
+          title="Intermodal"
+          text="Lane Logistics Group provides competitive rates for the transportation of intermodal freight. We provide reliable and timely solutions for cross-border shipments."
+          image="/images/service-intermodal.png"
+          href="/intermodal"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--gray">
+    <div class="container" style="text-align:center;">
+      <h2 class="section-title">Need A Custom Solution?</h2>
+      <p style="max-width:700px;margin:0 auto 25px;">We understand that every business has unique shipping needs. Contact us today to discuss a customized logistics solution tailored to your requirements.</p>
+      <a href="/contact-us" class="btn btn--primary">Get In Touch</a>
+    </div>
+  </section>
+
+</MainLayout>

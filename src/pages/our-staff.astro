@@ -1,0 +1,62 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import HeroBanner from '../components/HeroBanner.astro';
+---
+
+<MainLayout title="Our Staff" description="Meet the Lane Logistics Group team - over a decade of experience in logistics and transportation.">
+  
+  <HeroBanner title="Our Staff" backgroundImage="/images/hero-staff.png" />
+
+  <section class="section">
+    <div class="container">
+      <div class="content-section">
+        <div class="content-section__text">
+          <h2>Experienced & Dedicated Team</h2>
+          <p>We have a highly trained and dedicated staff who have a decade of experience in the logistics industry. We pride ourselves on providing the best quality service our customers can expect. When you partner with Lane Logistics Group, you can be assured that your shipment will be handled carefully.</p>
+          <p>While our staff is committed to providing a high level of services and customer satisfaction, we understand the importance of flexibility in a changing marketplace. Because of this understanding, we are dedicated to developing new strategies to meet our client's evolving needs.</p>
+          <a href="/careers" class="btn btn--primary" style="margin-top:15px;">Join Our Team</a>
+        </div>
+        <div class="content-section__image">
+          <img src="/images/staff-team.png" alt="Lane Logistics Staff" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--gray">
+    <div class="container" style="text-align:center;">
+      <h2 class="section-title">Our Values</h2>
+      <div class="features-grid" style="max-width:900px;margin:20px auto 0;text-align:left;">
+        <div class="feature-item">
+          <div class="feature-item__icon">✓</div>
+          <div>
+            <h4 class="feature-item__title">Integrity</h4>
+            <p class="feature-item__text">We operate with honesty and transparency in everything we do.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__icon">✓</div>
+          <div>
+            <h4 class="feature-item__title">Excellence</h4>
+            <p class="feature-item__text">We strive for excellence in every shipment, every route, every interaction.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__icon">✓</div>
+          <div>
+            <h4 class="feature-item__title">Teamwork</h4>
+            <p class="feature-item__text">We work together to deliver the best possible service to our clients.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__icon">✓</div>
+          <div>
+            <h4 class="feature-item__title">Dedication</h4>
+            <p class="feature-item__text">Our team is dedicated to going above and beyond for every customer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</MainLayout>
